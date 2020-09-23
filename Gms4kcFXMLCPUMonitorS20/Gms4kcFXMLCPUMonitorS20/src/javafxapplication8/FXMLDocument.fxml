@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="624.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication8.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="172.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gauge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand" fitHeight="150.0" fitWidth="200.0" layoutX="172.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" rotate="-149.7">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="text" layoutX="226.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00.00" />
+      <VBox alignment="TOP_CENTER" layoutX="-9.0" layoutY="230.0" prefHeight="374.0" prefWidth="511.0">
+         <children>
+            <Button fx:id="startStop" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startStopButton" text="Start" />
+            <Button fx:id="recordReset" mnemonicParsing="false" onAction="#recordResetButton" text="Record" />
+            <LineChart fx:id="lineChart" prefHeight="387.0" prefWidth="511.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
