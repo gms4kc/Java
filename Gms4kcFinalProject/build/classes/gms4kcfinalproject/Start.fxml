@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="578.0" style="-fx-background-color: lavenderblush; -fx-position-shape: center; -fx-background-position: center;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gms4kcfinalproject.StartController">
+   <children>
+      <TextArea fx:id="nameText" layoutX="200.0" layoutY="207.0" prefHeight="34.0" prefWidth="200.0" style="-fx-font-family: &quot;Comic Sans MS&quot;; -fx-border-color: #ff1969; -fx-border-width: 3px;" text="Enter Name" />
+      <ImageView fx:id="playButton" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="250.0" onMouseClicked="#handleGoToGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pictures/Play%20button.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <MenuBar prefHeight="0.0" prefWidth="578.0" style="-fx-background-color: lavenderblush; -fx-border-color: lavenderblush; -fx-border-width: 5px;">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-font-family: &quot;Comic Sans MS&quot;;" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" style="-fx-font-family: &quot;Comic Sans MS&quot;;" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" style="-fx-font-family: &quot;Comic Sans MS&quot;;" text="Save" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" style="-fx-font-family: &quot;Comic Sans MS&quot;;" text="About">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#aboutMethod" style="-fx-font-family: &quot;Comic Sans MS&quot;;" text="Game Info" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text fill="#ff1969" layoutX="67.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dress-Up">
+         <font>
+            <Font name="Comic Sans MS Bold" size="96.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

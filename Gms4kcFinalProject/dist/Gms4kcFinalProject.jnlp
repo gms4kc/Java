@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Gms4kcFinalProject.jnlp">
+  <information>
+    <title>Gms4kcFinalProject</title>
+    <vendor>genev</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Gms4kcFinalProject.jar" size="590683" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Gms4kcFinalProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="gms4kcfinalproject.Gms4kcFinalProject"  name="Gms4kcFinalProject" />
+  <update check="always"/>
+</jnlp>
